@@ -1,5 +1,6 @@
 body {
   font-family: "Itim", cursive;
+  background-color: rgba(0, 0, 0, 0.2);
 }
 
 header {
@@ -9,7 +10,7 @@ header {
   background-size: cover;
   color: rgb(211, 148, 31);
   text-align: center;
-  padding: 260px 0;
+  padding: 200px 0;
 }
 
 .container {
@@ -28,12 +29,24 @@ header h2 {
   font-size: 40px;
   line-height: 1.5;
 }
-header a .more {
+header a.more {
   font-weight: 700;
-  font-size: 14px;
+  font-size: 16px;
   line-height: 1.5;
   text-align: center;
   letter-spacing: 3px;
-  text-decoration: none;
   text-transform: uppercase;
+  text-decoration: none;
+  padding: 16px 32px;
+}
+@media (max-width: 900px) {
+  header {
+    padding: 60px 0;
+  }
+  header h1 {
+    font-size: 48px;
+  }
+  header h2 {
+    font-size: 20px;
+  }
 }

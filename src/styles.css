@@ -1,8 +1,20 @@
 body {
   font-family: "Itim", cursive;
-  background-color: rgba(0, 0, 0, 0.2);
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
 }
 
+section {
+  max-width: 1200px;
+  margin: 0 auto;
+}
 header {
   background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
     url("../images/the_catio.png");
@@ -10,25 +22,20 @@ header {
   background-size: cover;
   color: rgb(211, 148, 31);
   text-align: center;
-  padding: 200px 0;
+  padding: 300px 0;
 }
-
-.container {
-  max-width: 1400px;
-  margin: 0 auto;
-}
-
 header h1 {
   font-weight: 400;
+  font-size: 96px;
   font-style: normal;
   line-height: 1.5;
-  font-size: 96px;
 }
 header h2 {
   font-weight: 400;
   font-size: 40px;
   line-height: 1.5;
 }
+
 header a.more {
   font-weight: 700;
   font-size: 16px;
@@ -38,8 +45,49 @@ header a.more {
   text-transform: uppercase;
   text-decoration: none;
   padding: 16px 32px;
+  margin-top: 32px;
+  display: inline-block;
 }
-@media (max-width: 900px) {
+footer {
+  color: white;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.6)),
+    url("../images/love_cats.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 100px 0;
+}
+footer .social-links a {
+  margin: 0 auto;
+  padding: 10px 10px;
+  border-radius: 50%;
+  font-size: 20px;
+  transition: all 100ms ease-in-out;
+}
+footer p {
+  font-weight: 400;
+  font-size: 16px;
+  opacity: 0.9;
+  margin-right: 10px;
+  line-height: 24px;
+}
+footer ul {
+  padding: 0;
+}
+footer li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+footer a {
+  color: white;
+  opacity: 0.7;
+}
+footer h3 {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 30px;
+}
+@media (max-width: 960px) {
   header {
     padding: 60px 0;
   }

@@ -8,16 +8,54 @@ body {
 }
 .grid {
   display: grid;
-  grid-template-columns: 1fr 2fr 1fr;
+
+  grid-gap: 64px;
+}
+.grid-2-columns {
+  grid-template-columns: 1fr 1fr;
+}
+.grid-3-columns {
+  grid-template-columns: 1fr 2fr 2fr;
+}
+.party-catio {
+  border-radius: 8px;
+  max-width: 100%;
+}
+main {
+  background-color: rgb(226, 220, 213);
+}
+main h2 {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.5;
+  margin: 0;
+  letter-spacing: 5px;
+  color: #0c081a;
+  opacity: 0.5;
+  text-transform: uppercase;
+}
+main h3 {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 1.5;
+  margin: 0;
+}
+main p {
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 1.5;
+  opacity: 0.7;
 }
 
 section {
   max-width: 1200px;
   margin: 0 auto;
+  padding: 100px 0;
 }
 header {
   background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
     url("../images/the_catio.png");
+  max-width:100%
   background-repeat: no-repeat;
   background-size: cover;
   color: rgb(211, 148, 31);
@@ -54,7 +92,6 @@ footer {
     url("../images/love_cats.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  padding: 100px 0;
 }
 footer .social-links a {
   margin: 0 auto;
@@ -67,7 +104,6 @@ footer p {
   font-weight: 400;
   font-size: 16px;
   opacity: 0.9;
-  margin-right: 10px;
   line-height: 24px;
 }
 footer ul {
@@ -96,5 +132,15 @@ footer h3 {
   }
   header h2 {
     font-size: 20px;
+  }
+  footer {
+    padding: 60px 0;
+  }
+  .grid {
+    grid-template-columns: 1fr;
+    grid-gap: 32px;
+  }
+  section {
+    padding: 30px;
   }
 }

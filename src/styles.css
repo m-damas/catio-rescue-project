@@ -21,7 +21,7 @@ body {
   max-width: 100%;
 }
 .img-responsive {
-  max-width: 100%;
+  width: 100%;
   display: block;
   border-radius: 8px;
 }
@@ -40,6 +40,9 @@ body {
 }
 .card-footer {
   padding: 0 30px 30px;
+}
+.instagram-embed {
+  margin: 30px 0;
 }
 .btn {
   display: block;

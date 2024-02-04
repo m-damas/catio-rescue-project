@@ -202,10 +202,12 @@ footer h3 {
   }
   header h2 {
     font-size: 15px;
-    left: 20%;
+    left: 14%;
     margin-bottom: 40px;
   }
-
+  header a.learn {
+    left: 30%;
+  }
   footer {
     padding: 60px 0;
   }
